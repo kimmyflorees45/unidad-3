@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="pokedex.css">
+</head>
+<body>
+    <h1>Maestro Pokemon: Kimberly Barrera Flores</h1>
+    <img src="jigglypuff.jpeg" width="250px" style="top:0;">
+    <input type="text" placeholder="Jigglypuff" id="pokeName" name="pokeName" class="placeholder"><br>
+    <img src="pokemaster.jpeg" alt="Pokemaster" id="pokeImg" width="250px" class="pokeImg"><br>
+
+    <div id="pokename" class="pokeimg1" style="left: 100px; top: 200px; font-size: 15px;"></div>
+    <div id="pokeHe" class="pokeimg1" style="left: 100px; top: 220px; font-size: 15px;"></div>
+    <div id="pokeWe" class="pokeimg1" style="left: 100px; top: 240px; font-size: 15px;"></div>
+    <div id="pokeType" class="pokeimg1" style="left: 100px; top: 260px; font-size: 15px;"></div>
+    <div id="pokeitem" class="pokeimg1" style="left: 100px; top: 280px; font-size: 15px;"></div>
+    <div id="pokemove1" class="pokeimg1" style="left: 100px; top: 280px; font-size: 15px;"></div>
+    <div id="pokemove2" class="pokeimg1" style="left: 100px; top: 300px; font-size: 15px;"></div>
+    <div id="pokemove3" class="pokeimg1" style="left: 100px; top: 320px; font-size: 15px;"></div>
+    <div id="pokemove4" class="pokeimg1" style="left: 100px; top: 340px; font-size: 15px;"></div>
+
+    <div id="pokeid" class="pokeimg1" style="left: 600px; top: 500px; font-size: 200px; color: pink;"></div>
+    <div id="pokeorder" style="left: 700px; top: 500px; font-size: 20px; color: red;"></div>
+
+    <button onclick="fetchPokemon()" class="button"> Presiona</button>
+    <div class="grafica">
+    <canvas id="miCanvas"></canvas>
+    </div>
+    <script src="pokedex.js"></script>
+    <script src="Chart.js"></script>
+
+   
+</body>
+</html>
