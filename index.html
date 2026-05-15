@@ -1,38 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pokedex</title>
+    <title>Pokédex - Kimberly Barrera</title>
     <link rel="stylesheet" href="pokedex.css">
 </head>
 <body>
-    <h1>Maestro Pokemon: Kimberly Barrera Flores</h1>
-    <img src="jigglypuff.jpeg" width="250px" style="top:0;">
-    <input type="text" placeholder="Jigglypuff" id="pokeName" name="pokeName" class="placeholder"><br>
-    <img src="pokemaster.jpeg" alt="Pokemaster" id="pokeImg" width="250px" class="pokeImg"><br>
+    <div class="main-container">
+        <div class="search-box">
+            <input type="text" id="pokeName" placeholder="Escribe el nombre de un Pokémon...">
+            <button onclick="fetchPokemon()">Presiona</button>
+        </div>
 
-    <div id="pokename" class="pokeimg1" style="left: 100px; top: 200px; font-size: 15px;"></div>
-    <div id="pokeHe" class="pokeimg1" style="left: 100px; top: 220px; font-size: 15px;"></div>
-    <div id="pokeWe" class="pokeimg1" style="left: 100px; top: 240px; font-size: 15px;"></div>
-    <div id="pokeType" class="pokeimg1" style="left: 100px; top: 260px; font-size: 15px;"></div>
-    <div id="pokeitem" class="pokeimg1" style="left: 100px; top: 280px; font-size: 15px;"></div>
-    <div id="pokemove1" class="pokeimg1" style="left: 100px; top: 280px; font-size: 15px;"></div>
-    <div id="pokemove2" class="pokeimg1" style="left: 100px; top: 300px; font-size: 15px;"></div>
-    <div id="pokemove3" class="pokeimg1" style="left: 100px; top: 320px; font-size: 15px;"></div>
-    <div id="pokemove4" class="pokeimg1" style="left: 100px; top: 340px; font-size: 15px;"></div>
+        <div class="pokedex-content">
+            <div class="info-panel">
+                <img src="pokemaster.jpeg" id="pokeImg" alt="Pokemaster">
+                <span id="pokename"></span>
+                <div class="data-grid">
+                    <div id="pokeHe">Altura: --</div>
+                    <div id="pokeWe">Peso: --</div>
+                    <div id="pokeorder">Orden: --</div>
+                    <div id="pokeid">ID: --</div>
+                    <div id="pokeitem">Habilidad: --</div>
+                    <div id="pokeType">Tipo: --</div>
+                </div>
+            </div>
 
-    <div id="pokeid" class="pokeimg1" style="left: 600px; top: 500px; font-size: 200px; color: pink;"></div>
-    <div id="pokeorder" style="left: 700px; top: 500px; font-size: 20px; color: red;"></div>
-
-    <button onclick="fetchPokemon()" class="button"> Presiona</button>
-    <div class="grafica">
-    <canvas id="miCanvas"></canvas>
+            <div class="stats-panel">
+                <h3>Movimientos</h3>
+                <div class="moves-list">
+                    <div id="pokemove1">Movimiento 1: --</div>
+                    <div id="pokemove2">Movimiento 2: --</div>
+                    <div id="pokemove3">Movimiento 3: --</div>
+                    <div id="pokemove4">Movimiento 4: --</div>
+                </div>
+                <h3>Estadísticas</h3>
+                <div class="grafica">
+                    <canvas id="miCanvas"></canvas>
+                </div>
+            </div>
+        </div>
     </div>
-    <script src="pokedex.js"></script>
-    <script src="Chart.js"></script>
 
-   
+    <script src="chart.js"></script>
+    <script src="pokedex.js"></script>
 </body>
 </html>
